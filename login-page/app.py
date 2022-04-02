@@ -6,6 +6,7 @@ import re
 from flask import render_template
 
 app=Flask(__name__)
+app._static_folder = r"C:\Users\Sanjay Kumar\flask\login-page\static"
 app.secret_key = '__privatekey__'
 connection =sqlite3.connect("user1.db")
 cursor = connection.cursor()
